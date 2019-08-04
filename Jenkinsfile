@@ -14,7 +14,7 @@ node('selenium')
     //}
     stage('ContinuousTesting')
     {
-        git 'https://github.com/selenium-saikrishna/FunctionalTesting.git'
+        git 'https://github.com/vittalgit/maven.git'
         sh label: '', script: 'java -jar /home/ubuntu/.jenkins/workspace/ScriptedPipeline/testing.jar'
     }
      stage('ContinuousDelivery')
