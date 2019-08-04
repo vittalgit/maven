@@ -2,7 +2,7 @@ node('master')
 {
     stage('ContinuousDownload') 
     {
-         git 'https://github.com/selenium-saikrishna/maven.git'
+         git 'https://github.com/vittalgit/maven.git'
     }
     stage('ContinuousBuild') 
     {
