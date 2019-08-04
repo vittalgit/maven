@@ -6,7 +6,7 @@ node('selenium')
     }
     stage('ContinuousBuild') 
     {
-         sh label: '', script: 'mvn package'
+         sh label: '', script: '/home/selenium/tools/hudson.tasks.Maven_MavenInstallation/Maven/bin/mvn package'
     }
     stage('ContinuousDeployment')
     {
