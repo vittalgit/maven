@@ -8,10 +8,10 @@ node('selenium')
     {
          sh label: '', script: '/home/selenium/tools/hudson.tasks.Maven_MavenInstallation/Maven/bin/mvn package'
     }
-    stage('ContinuousDeployment')
-    {
-        sh label: '', script: 'scp /home/selenium/workspace/test-v/webapp/target/webapp.war /var/lib/tomcat8/webapps/testenv.war'
-    }
+    //stage('ContinuousDeployment')
+    //{
+      //  sh label: '', script: 'scp /home/selenium/workspace/test-v/webapp/target/webapp.war /var/lib/tomcat8/webapps/testenv.war'
+    //}
     stage('ContinuousTesting')
     {
         git 'https://github.com/selenium-saikrishna/FunctionalTesting.git'
